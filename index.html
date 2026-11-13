@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RetroLCD: retro watch faces for Garmin</title>
+<meta name="description" content="RetroLCD makes retro LCD watch faces for Garmin watches. Coming soon to the Connect IQ Store.">
+<meta name="theme-color" content="#0E1B33">
+<meta property="og:title" content="RetroLCD">
+<meta property="og:description" content="Retro LCD watch faces for Garmin watches.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://retrolcd.com/">
+<meta property="og:image" content="https://retrolcd.com/og.png">
+<link rel="canonical" href="https://retrolcd.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --navy: #0E1B33;
+    --cream: #F1E3CC;
+    --gold: #F2B33D;
+    --muted: #8FA0BF;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    min-height: 100svh;
+    background: var(--navy);
+    color: var(--cream);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 24px;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { width: 100%; max-width: 640px; }
+  .logo { width: 100%; max-width: 520px; height: auto; display: block; margin: 0 auto 36px; }
+  h1 {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap;
+  }
+  .tagline { font-size: 1.35rem; line-height: 1.4; margin: 0 0 12px; font-weight: 600; }
+  .sub { font-size: 1.05rem; line-height: 1.55; margin: 0 auto 32px; color: var(--muted); max-width: 30em; }
+  .faces {
+    list-style: none; padding: 0; margin: 0 0 36px;
+    display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+  }
+  .faces li {
+    border: 1.5px solid rgba(241, 227, 204, 0.28);
+    border-radius: 999px; padding: 8px 16px; font-size: 0.95rem; letter-spacing: 0.02em;
+  }
+  .btn {
+    display: inline-block; background: var(--gold); color: var(--navy);
+    font-weight: 700; font-size: 1.05rem; text-decoration: none;
+    padding: 14px 26px; border-radius: 12px;
+  }
+  .btn:hover, .btn:focus-visible { background: #FFD400; }
+  a:focus-visible { outline: 3px solid var(--cream); outline-offset: 3px; }
+  footer { margin-top: 44px; font-size: 0.95rem; color: var(--muted); line-height: 1.7; }
+  footer a { color: var(--cream); }
+  .fine { font-size: 0.8rem; margin-top: 18px; opacity: 0.8; }
+  @media (max-height: 620px) {
+    body { padding-top: 20px; padding-bottom: 20px; }
+    .logo { margin-bottom: 24px; }
+    .sub { margin-bottom: 24px; }
+    .faces { margin-bottom: 28px; }
+    footer { margin-top: 32px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>RetroLCD</h1>
+  <img class="logo" src="logo.svg" width="674" height="182" alt="">
+  <p class="tagline">Retro LCD watch faces for Garmin watches.</p>
+  <p class="sub">Seventies stripes and eighties segment displays, rebuilt for modern AMOLED watches. Our first faces are in beta now.</p>
+  <ul class="faces" aria-label="Watch faces">
+    <li>Retro LCD</li>
+    <li>Retro LCD Lite</li>
+    <li>Alarm Chrono</li>
+  </ul>
+  <a class="btn" href="https://apps.garmin.com/developer/4def071b-5418-4e43-b75e-4273f0291b76/apps" rel="noopener">Find us on the Connect IQ Store</a>
+  <footer>
+    Questions, bugs or feature ideas?<br>
+    <a href="mailto:retrolcd@agentmail.to">retrolcd@agentmail.to</a>
+    <p class="fine">RetroLCD is an independent developer, not affiliated with or endorsed by Garmin. Garmin and Connect IQ are trademarks of Garmin Ltd. or its subsidiaries.</p>
+  </footer>
+</main>
+</body>
+</html>
